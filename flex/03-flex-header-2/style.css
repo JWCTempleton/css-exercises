@@ -12,6 +12,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+  align-items: center;
 }
 
 .profile-image {
@@ -43,6 +47,18 @@ a {
   color: rebeccapurple;
 }
 
+.headerLogo{
+  display: flex;
+  gap:16px
+}
 ul {
   list-style-type: none;
+  display: flex;
+  gap:8px;
+  padding: 0;
+}
+
+.profileSection{
+  display: flex;
+  gap:10px;
 }
