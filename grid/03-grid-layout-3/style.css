@@ -25,7 +25,6 @@
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-column: 1/-1;
-  grid-auto-flow: row;
   align-items: center;
 
 }
@@ -35,6 +34,7 @@
 
 .menu {
   display: grid;
+  align-self: center;
 }
 
 .menu ul {
@@ -77,6 +77,8 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+  display: grid;
+  align-items: center;
 }
 
 .nav {
