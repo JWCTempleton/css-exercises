@@ -5,6 +5,9 @@
 
 .container {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
 }
 
 .container div {
@@ -13,10 +16,17 @@
   font-family: Helvetica;
   font-weight: bold;
   color: white;
+  
 }
 
 .header {
   background-color: #393f4d;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-column: 1/-1;
+  grid-auto-flow: row;
+  align-items: center;
+
 }
 
 .logo {
@@ -26,6 +36,10 @@
 }
 
 .menu ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
 }
 
 .menu ul,
@@ -35,6 +49,7 @@
 
 .sidebar {
   background-color: #FF7755;
+  grid-column: 1/span 1;
 }
 
 .sidebar .photo {
